@@ -36,4 +36,5 @@ class Block {
   }
 }
 
+// We export the Block class so it can be require()'d in other files.
 module.exports = Block;
