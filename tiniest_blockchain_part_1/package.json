@@ -1,0 +1,30 @@
+{
+  "name": "tiniest_blockchain_1",
+  "version": "1.0.0",
+  "description": "Simple Blockchain based on the article (https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senthiljruby/tiniest-blockchain-js.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "Javascript",
+    "Tiniest",
+    "Crypto",
+    "crypto-currency",
+    "Nodejs"
+  ],
+  "author": "Senthil Kumar Bhaskaran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/senthiljruby/tiniest-blockchain-js/issues"
+  },
+  "homepage": "https://github.com/senthiljruby/tiniest-blockchain-js#readme",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  }
+}
