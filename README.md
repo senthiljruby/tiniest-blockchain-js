@@ -33,9 +33,13 @@ Getting up and running is as easy as 1, 2, 3.
     node index.js
     ```
 
-## Testing
+### Testing
 
 Simply run `npm test` and all your tests in the `test/` directory will be run.
+
+### Test Coverage
+
+Simply run `npm run coverage:nyc` or `npm run coverage:ist` to get the test coverage in  **coverage** folder
 
 ## Changelog
 
