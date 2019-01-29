@@ -4,7 +4,7 @@
   "description": "Simple Blockchain based on the article (https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,10 @@
   "homepage": "https://github.com/senthiljruby/tiniest-blockchain-js#readme",
   "dependencies": {
     "crypto-js": "^3.1.9-1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
   }
 }
