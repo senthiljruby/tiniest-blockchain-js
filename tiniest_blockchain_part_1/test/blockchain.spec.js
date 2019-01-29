@@ -15,8 +15,14 @@ describe('Simple Tiniest Blockchain Testcase (blockchain.js)', () => {
       _blockChain = new BlockChain();
     });
 
+    describe('#check Instances of Block', () => {
+      it('should check the new Block() is instance of class Block', () => {
+        expect(new BlockChain()).to.be.an.instanceof(BlockChain);
+      });
+    });
+
     describe('#constructor()', () => {
-      it('should check the constructor function and create the genesis block', function () {
+      it('should check the constructor function and create the genesis block', () => {
         let _blockChain = new BlockChain();
         expect(_blockChain.chain[0].index).to.equal(0);
         expect(_blockChain.chain[0].data).to.equal('Genesis Block');
@@ -25,7 +31,7 @@ describe('Simple Tiniest Blockchain Testcase (blockchain.js)', () => {
     });
 
     describe('#createGenesisBlock()', () => {
-      it('should create new Genesis Block', function () {
+      it('should create new Genesis Block', () => {
         let _genesisBlock = _blockChain.createGenesisBlock();
         expect(_genesisBlock.index).to.equal(0);
         expect(_genesisBlock.data).to.equal('Genesis Block');
@@ -34,7 +40,7 @@ describe('Simple Tiniest Blockchain Testcase (blockchain.js)', () => {
     });
 
     describe('#getCurrentTimestamp()', () => {
-      it('should get current timestamp', function () {
+      it('should get current timestamp', () => {
         let _currentTimestampForBlocks = _blockChain.getCurrentTimestamp().toString();
         let _currentDate = new Date().toString();
         expect(_currentTimestampForBlocks).to.equals(_currentDate);
@@ -42,7 +48,7 @@ describe('Simple Tiniest Blockchain Testcase (blockchain.js)', () => {
     });
 
     describe('#getLatestNextBlock()', () => {
-      it('should get genesis block value when no block added', function () {
+      it('should get genesis block value when no block added', () => {
         let _currentTimestampForBlocks = _blockChain.getLatestNextBlock();
         expect(_currentTimestampForBlocks.index).to.equal(0);
         expect(_currentTimestampForBlocks.data).to.equal('Genesis Block');
@@ -51,7 +57,7 @@ describe('Simple Tiniest Blockchain Testcase (blockchain.js)', () => {
     });
 
     describe('#addBlock()', () => {
-      it('should get genesis block value when no block added', function () {
+      it('should get genesis block value when no block added', () => {
         let _currentTimestampForBlocks = _blockChain.getLatestNextBlock();
         expect(_currentTimestampForBlocks.index).to.equal(0);
         expect(_currentTimestampForBlocks.data).to.equal('Genesis Block');
