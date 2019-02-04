@@ -1,51 +1,40 @@
 {
-  "name": "tiniest-blockchain",
-  "description": "",
-  "version": "0.0.0",
-  "homepage": "",
-  "main": "src",
-  "keywords": [
-    "feathers"
-  ],
-  "author": {
-    "name": "",
-    "email": ""
-  },
-  "contributors": [],
-  "bugs": {},
-  "directories": {
-    "lib": "src",
-    "test": "test/",
-    "config": "config/"
-  },
-  "engines": {
-    "node": "^10.0.0",
-    "yarn": ">= 0.18.0"
-  },
+  "name": "tiniest_blockchain_1",
+  "version": "1.0.0",
+  "description": "Simple Blockchain based on the article (https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b)",
+  "main": "index.js",
   "scripts": {
-    "test": "yarn run eslint && NODE_ENV= yarn run mocha",
-    "eslint": "eslint src/. test/. --config .eslintrc.json",
-    "dev": "nodemon src/",
-    "start": "node src/",
-    "mocha": "mocha test/ --recursive --exit"
+    "test": "mocha test",
+    "coverage:nyc": "nyc --reporter=html --reporter=text mocha",
+    "coverage:ist": "istanbul cover _mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senthiljruby/tiniest-blockchain-js.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "Javascript",
+    "Tiniest",
+    "Crypto",
+    "crypto-currency",
+    "Nodejs"
+  ],
+  "author": "Senthil Kumar Bhaskaran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/senthiljruby/tiniest-blockchain-js/issues"
+  },
+  "homepage": "https://github.com/senthiljruby/tiniest-blockchain-js#readme",
   "dependencies": {
-    "@feathersjs/configuration": "^2.0.4",
-    "@feathersjs/errors": "^3.3.4",
-    "@feathersjs/express": "^1.2.7",
-    "@feathersjs/feathers": "^3.2.3",
-    "@feathersjs/socketio": "^3.2.7",
-    "compression": "^1.7.3",
-    "cors": "^2.8.5",
-    "helmet": "^3.15.0",
-    "serve-favicon": "^2.5.0",
-    "winston": "^3.0.0"
+    "axios": "^0.18.0",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.4"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "nodemon": "^1.18.7",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.2"
+    "nyc": "^13.1.0"
   }
 }
