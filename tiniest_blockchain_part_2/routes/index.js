@@ -73,7 +73,7 @@ class Routes {
 
 module.exports = function (app) {
   var routes = new Routes();
-  app.get('/', routes.rootApp.bind(routes));
+  // app.get('/', routes.rootApp.bind(routes));
   app.post('/api/v1/transaction', routes.createTransactions.bind(routes)); // For Creating Transactions
   app.get('/api/v1/transactions', routes.getTransactions.bind(routes)); // Getting the transactions
   app.get('/api/v1/blocks', routes.getBlocks.bind(routes)); // Getting the blocks

@@ -10,6 +10,8 @@ const app = express();
 // Integrating the routes into app
 let _routes = new Routes(app);
 
+app.use(express.static('public'));
+
 app.listen(Config.listening_port, () => {
   console.log(`Info: Application started on http://localhost:${Config.listening_port}`);
-})
+});

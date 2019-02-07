@@ -1,0 +1,11 @@
+<form>
+  <div class="form-group">
+    <label for="receiverId">Receiver ID</label>
+    <input type="text" class="form-control" id="receiverId" placeholder="Receiver ID" [(ngModel)]="transaction.to" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label for="amountForTransaction">Amount</label>
+    <input type="number" class="form-control" id="amountForTransaction" placeholder="Amount" [(ngModel)]="transaction.amount" [ngModelOptions]="{standalone: true}">
+  </div>
+  <button class="btn btn-default" (click)="createTransaction()">Create</button>
+</form>
