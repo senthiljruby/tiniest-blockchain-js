@@ -35,6 +35,15 @@ Getting up and running is as easy as 1, 2, 3.
 
 ### Part 2
 
+
+Running the instance through DOCKER
+
+1. docker-compose up -d
+2. Browse the app in the browser with http://localhost:3000
+
+
+(or)
+
 Getting up and running is as easy as 1, 2, 3.
 
 1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
